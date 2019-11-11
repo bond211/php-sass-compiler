@@ -16,7 +16,7 @@ class SassCompiler
      */
     public static function run($scssDir, $cssDir, $mode = Mode::DEFAULT, $format = OutputFormat::COMPRESSED)
     {
-        $files = glob($scssDir . '[^_]*.scss');
+        $files = glob($scssDir . '[!_]*.scss');
 
         if ($files === false) {
             return;
