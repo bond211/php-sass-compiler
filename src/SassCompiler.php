@@ -37,7 +37,7 @@ class SassCompiler
     }
 
     private static function shouldCompile(
-        string $mode,
+        int $mode,
         string $sassFilename,
         string $cssFilename,
         int $lastIncludeModifiedTimestamp
