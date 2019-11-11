@@ -90,7 +90,7 @@ class SassCompiler
         return $compiler;
     }
 
-    private static function toLastIncludeModifiedTimestamp(string $mode, string $scssDir): int
+    private static function toLastIncludeModifiedTimestamp(int $mode, string $scssDir): int
     {
         $lastModifiedTimestamp = 0;
 
