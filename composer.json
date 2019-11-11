@@ -1,0 +1,34 @@
+{
+  "name": "bond211/php-sass-compiler",
+  "type": "project",
+  "authors": [
+    {
+      "name": "Alexander Bondar",
+      "email": "alexander@bondar.de",
+      "homepage": "https://www.bondar.de",
+      "role": "Developer"
+    }
+  ],
+  "description": "SASS compiler for PHP",
+  "keywords": [
+    "sass"
+  ],
+  "license": "MIT",
+  "require": {
+    "php": "^7.1.3",
+    "scssphp/scssphp": "^1.0.5"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^7.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Bond211\\SassCompiler\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Tests\\": "tests/"
+    }
+  }
+}

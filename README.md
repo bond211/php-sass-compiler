@@ -1,2 +1,1 @@
-# php-sass-compiler
-PHP SASS Compiler
+# PHP SASS Compiler
