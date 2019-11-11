@@ -57,14 +57,14 @@ class SassCompiler
         $targetFileModificationTimestamp = filemtime($sassFilename);
 
         // source file modified after target file
-        if ($sourceFileModificationTimestamp >= $targetFileModificationTimestamp) {
+        if ($sourceFileModificationTimestamp > $targetFileModificationTimestamp) {
             return true;
         }
 
         // check include files
         if ($mode === Mode::CHECK_INCLUDES) {
             // check include modification timestamp
-            return $lastIncludeModifiedTimestamp >= $sourceFileModificationTimestamp;
+            return $lastIncludeModifiedTimestamp > $sourceFileModificationTimestamp;
         }
 
         return false;
