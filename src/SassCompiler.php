@@ -119,7 +119,7 @@ class SassCompiler
      */
     private static function fileExists($path): bool
     {
-        return realpath($path);
+        return file_exists(realpath($path));
     }
 
     private static function compile($sassFilename, $scssDir, $cssDir, $formatter)
